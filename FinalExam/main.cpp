@@ -10,9 +10,9 @@
 using namespace std;
 
 //Function Prototypes
-int sumOfRange(int startVal, int endVal);
-int productOfRange(int startVal, int endVal);
-bool isPositive(double value);
+int sumOfRange(const int startVal, const int endVal);
+int productOfRange(const int startVal, const int endVal);
+bool isPositive(const double value);
 /**
  * The driver of the cpp. presents the menu to the user and executes the requests
  * @return returns 0.
@@ -70,7 +70,7 @@ int main()
  * @param endVal The ending value.
  * @return returns the sum of the range.
  */
-int sumOfRange(int startVal, int endVal)
+int sumOfRange(const int startVal, const int endVal)
 {
     return 0;
 }
@@ -81,7 +81,7 @@ int sumOfRange(int startVal, int endVal)
  * @param endVal The ending value.
  * @return returns the product of the range.
  */
-int productOfRange(int startVal, int endVal)
+int productOfRange(const int startVal, const int endVal)
 {
     return 0;
 }
@@ -90,7 +90,7 @@ int productOfRange(int startVal, int endVal)
  * @param value The value that will be checked if positive or not.
  * @return returns true if the value is positive and false if it is negative.
  */
-bool isPositive(double value)
+bool isPositive(const double value)
 {
     bool ret = true;
     
