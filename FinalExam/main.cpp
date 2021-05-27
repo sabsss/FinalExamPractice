@@ -48,6 +48,13 @@ int main()
                 break;
             
             case 2:
+                cout << "\nEnter starting value: ";
+                cin >> startProd;
+                
+                cout << "\nEnter ending value: ";
+                cin >> endProd;
+                
+                cout << "\nThe product of the range is: " << productOfRange(startProd, endProd);
                 break;
         
             case 3:
@@ -103,7 +110,14 @@ int sumOfRange(const int startVal, const int endVal)
  */
 int productOfRange(const int startVal, const int endVal)
 {
-    return 0;
+    int prod = 1;
+    
+    for(int i = startVal; i <= endVal; ++i)
+    {
+        prod *= i;
+    }
+    
+    return prod;
 }
 /**
  * The <code>isPositive</code> function checks if given number is positive.
