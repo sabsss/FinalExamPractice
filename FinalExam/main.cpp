@@ -20,12 +20,16 @@ bool isPositive(double value);
 int main()
 {
     int choice;
+    double value;
     
     do
     {
-            cout << "\n1) Sum of range";
-            cout << "\n2) Product of range";
-            cout << "\n3)Exit";
+        cout << "\n1) Sum of range";
+        cout << "\n2) Product of range";
+        cout << "\n3) Is positive";
+        cout << "\n4)Exit";
+        cout << "\nEnter choice: ";
+        cin >> choice;
         
         switch(choice)
         {
@@ -34,12 +38,27 @@ int main()
             
             case 2:
                 break;
-            
+        
             case 3:
+                cout << "\nEnter value to check if positive: ";
+                cin >> value;
+                cout << "\nThe sign of the value is: ";
+                if(isPositive(value) == 1)
+                {
+                    cout << "positive";
+                }
+                else
+                {
+                    cout << "negative";
+                }
+                break;
+                
+            case 4:
+                //no code needed for exit
                 break;
         }
         
-    }while(choice != 3);
+    }while(choice != 4);
     
     cout << "\nHave a nice day!! :)";
     return 0;
@@ -73,5 +92,12 @@ int productOfRange(int startVal, int endVal)
  */
 bool isPositive(double value)
 {
-    return true;
+    bool ret = true;
+    
+    if(value < 0)
+    {
+        ret = false;
+    }
+    
+    return ret;
 }
