@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		97785A59265FEF9000C8F58B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97785A58265FEF9000C8F58B /* main.cpp */; };
+		97785A6026600F8900C8F58B /* UnitTestFinal.m in Sources */ = {isa = PBXBuildFile; fileRef = 97785A5F26600F8900C8F58B /* UnitTestFinal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		97785A55265FEF9000C8F58B /* FinalExam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FinalExam; sourceTree = BUILT_PRODUCTS_DIR; };
 		97785A58265FEF9000C8F58B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		97785A5F26600F8900C8F58B /* UnitTestFinal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UnitTestFinal.m; path = FinalExam/UnitTestFinal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		97785A4C265FEF9000C8F58B = {
 			isa = PBXGroup;
 			children = (
+				97785A5F26600F8900C8F58B /* UnitTestFinal.m */,
 				97785A57265FEF9000C8F58B /* FinalExam */,
 				97785A56265FEF9000C8F58B /* Products */,
 			);
@@ -118,6 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97785A6026600F8900C8F58B /* UnitTestFinal.m in Sources */,
 				97785A59265FEF9000C8F58B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
