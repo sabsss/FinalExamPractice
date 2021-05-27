@@ -114,9 +114,12 @@ int productOfRange(const int startVal, const int endVal)
     
     for(int i = startVal; i <= endVal; ++i)
     {
+        if(i != 0)
+        {
         prod *= i;
+        }
     }
-    
+
     return prod;
 }
 /**
