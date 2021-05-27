@@ -19,7 +19,7 @@ bool isPositive(const double value);
  */
 int main()
 {
-    int choice;
+    int startSum, endSum, startProd, endProd, choice;
     double value;
     
     do
@@ -34,6 +34,17 @@ int main()
         switch(choice)
         {
             case 1:
+                do
+                {
+                cout << "\nEnter starting value: ";
+                cin >> startSum;
+                
+                cout << "\nEnter ending value: ";
+                cin >> endSum;
+                    
+                }while(startSum > endSum);
+                
+                cout << "The sum of the range is: " << sumOfRange(startSum, endSum);
                 break;
             
             case 2:
@@ -72,7 +83,16 @@ int main()
  */
 int sumOfRange(const int startVal, const int endVal)
 {
-    return 0;
+    assert(startVal <= endVal);
+    
+    int sum = 0;
+    
+    for(int i = startVal; i <= endVal; ++i)
+    {
+        sum += i;
+    }
+    
+    return sum;
 }
 
 /**
