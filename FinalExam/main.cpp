@@ -19,6 +19,29 @@ bool isPositive(double value);
  */
 int main()
 {
+    int choice;
+    
+    do
+    {
+            cout << "\n1) Sum of range";
+            cout << "\n2) Product of range";
+            cout << "\n3)Exit";
+        
+        switch(choice)
+        {
+            case 1:
+                break;
+            
+            case 2:
+                break;
+            
+            case 3:
+                break;
+        }
+        
+    }while(choice != 3);
+    
+    cout << "\nHave a nice day!! :)";
     return 0;
 }
 
